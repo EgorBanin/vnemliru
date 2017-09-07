@@ -1,0 +1,20 @@
+{
+    "name": "eb/vnemliru",
+    "type": "project",
+    "license": "UNLICENSE",
+    "authors": [
+        {
+            "name": "Georgy Banin",
+            "email": "gbanin@avito.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    },
+    "require": {
+        "michelf/php-markdown": "^1.7",
+        "eb/mysql": "^1.0"
+    }
+}
