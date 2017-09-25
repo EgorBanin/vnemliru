@@ -32,6 +32,6 @@ class Router {
 			}
 		}
 		
-		return false;
+		return [false, []];
 	}
 }

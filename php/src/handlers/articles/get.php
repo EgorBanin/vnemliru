@@ -1,8 +1,9 @@
 <?php
 
-return function($db) {
+return function($app) {
 
-	$rows = $db->table('articles')->select();
-	echo ob_include(__DIR__.'/index.tpl', ['articles' => $rows]);
+	$rows = $app->getDb()->table('articles')->select();
+
+	return ob_include(__DIR__.'/index.tpl', ['articles' => $rows]);
 
 };
